@@ -1,0 +1,12 @@
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\bin\Debug\netstandard2.0\BatPrismTutorial.deps.json
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\bin\Debug\netstandard2.0\BatPrismTutorial.dll
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\bin\Debug\netstandard2.0\BatPrismTutorial.pdb
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\obj\Debug\netstandard2.0\BatPrismTutorial.csproj.CoreCompileInputs.cache
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\obj\Debug\netstandard2.0\BatPrismTutorial.AssemblyInfoInputs.cache
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\obj\Debug\netstandard2.0\BatPrismTutorial.AssemblyInfo.cs
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\obj\Debug\netstandard2.0\BatPrismTutorial.dll
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\obj\Debug\netstandard2.0\BatPrismTutorial.pdb
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\obj\Debug\netstandard2.0\BatPrismTutorial.csprojAssemblyReference.cache
+C:\Repository\BatPrismTutorial\BatPrismTutorial\BatPrismTutorial\obj\Debug\netstandard2.0\XamlC.stamp
