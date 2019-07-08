@@ -7,6 +7,7 @@ namespace BatPrismTutorial.Services
     public interface ISQLiteConnectionProvider
     {
         //SQLiteConnection GetConnection();
+        //Ahora usaremos conexion asincrona
         SQLiteAsyncConnection GetConnection();
     }
 }
