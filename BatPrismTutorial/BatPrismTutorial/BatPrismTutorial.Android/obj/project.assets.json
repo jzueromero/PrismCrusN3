@@ -1136,20 +1136,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CDS3UNIVO6\\.nuget\\packages\\": {}
+    "C:\\Users\\CDS1UNIVO39\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\N3\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial.Android\\BatPrismTutorial.Android.csproj",
+      "projectUniqueName": "C:\\rj\\PrismCrusN3\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial.Android\\BatPrismTutorial.Android.csproj",
       "projectName": "BatPrismTutorial.Android",
-      "projectPath": "C:\\N3\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial.Android\\BatPrismTutorial.Android.csproj",
-      "packagesPath": "C:\\Users\\CDS3UNIVO6\\.nuget\\packages\\",
-      "outputPath": "C:\\N3\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial.Android\\obj\\",
+      "projectPath": "C:\\rj\\PrismCrusN3\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial.Android\\BatPrismTutorial.Android.csproj",
+      "packagesPath": "C:\\Users\\CDS1UNIVO39\\.nuget\\packages\\",
+      "outputPath": "C:\\rj\\PrismCrusN3\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\CDS3UNIVO6\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CDS1UNIVO39\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1162,8 +1162,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\N3\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial.csproj": {
-              "projectPath": "C:\\N3\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial.csproj"
+            "C:\\rj\\PrismCrusN3\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial.csproj": {
+              "projectPath": "C:\\rj\\PrismCrusN3\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial\\BatPrismTutorial.csproj"
             }
           }
         }
