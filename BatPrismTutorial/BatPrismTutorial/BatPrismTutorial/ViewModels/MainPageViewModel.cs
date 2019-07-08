@@ -18,17 +18,6 @@ namespace BatPrismTutorial.ViewModels
             Title = "Main Page";
         }
         */
-        public MainPageViewModel(INavigationService navigationService,IBatFamilyService BatSericeParam)
-            :base(navigationService)
-        {
-            this.BatItemService = BatSericeParam;
-
-            this.AddCommand = new DelegateCommand(this.AddTodoItem, () => !string.IsNullOrEmpty(this.InputText))
-                .ObservesProperty(() => this.InputText);
-
-            this.DeleteCommand = new DelegateCommand<BatFamily>(this.DeleteTodoItem);
-        }
-        //    
         private IBatFamilyService BatItemService { get; }
 
         private IEnumerable<BatFamily> BatFamilyAll;
@@ -51,19 +40,43 @@ namespace BatPrismTutorial.ViewModels
 
         public DelegateCommand<BatFamily> DeleteCommand { get; }
 
-       
 
-        private void DeleteTodoItem(BatFamily BatParent)
+        public MainPageViewModel(INavigationService navigationService,IBatFamilyService BatSericeParam)
+            :base(navigationService)
         {
-            this.BatItemService.Delete(BatParent.Id);
-            this.BatFamilyAlls = this.BatItemService.GetAll();
+            this.BatItemService = BatSericeParam;
+
+            this.AddCommand = new DelegateCommand(this.AddTodoItem, () => !string.IsNullOrEmpty(this.InputText))
+                .ObservesProperty(() => this.InputText);
+
+            this.DeleteCommand = new DelegateCommand<BatFamily>(this.DeleteTodoItem);
+        }
+        //    
+
+
+        /*  private void DeleteTodoItem(BatFamily BatParent)
+          {
+              this.BatItemService.Delete(BatParent.Id);
+              this.BatFamilyAlls = this.BatItemService.GetAll();
+          }*/
+        private async void DeleteTodoItem(BatFamily todoItem)
+        {
+            await this.BatItemService.DeleteAsync(todoItem);
+            this.BatFamilyAlls = await this.BatItemService.GetAllAsync();
         }
 
-        private void AddTodoItem()
+
+        /*  private void AddTodoItem()
+          {
+              this.BatItemService.Insert(new BatFamily { Nombre = this.InputText });
+              this.InputText = "";
+              this.BatFamilyAlls = this.BatItemService.GetAll();
+          }*/
+        private async void AddTodoItem()
         {
-            this.BatItemService.Insert(new BatFamily { Nombre = this.InputText });
+            await this.BatItemService.InsertAsync(new BatFamily { Nombre = this.InputText });
             this.InputText = "";
-            this.BatFamilyAlls = this.BatItemService.GetAll();
+            this.BatFamilyAlls = await this.BatItemService.GetAllAsync();
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
@@ -71,9 +84,13 @@ namespace BatPrismTutorial.ViewModels
 
         }
 
-        public void OnNavigatedTo(NavigationParameters parameters)
+        /*public void OnNavigatedTo(NavigationParameters parameters)
         {
             this.BatFamilyAlls = this.BatItemService.GetAll();
+        }*/
+        public async void OnNavigatedTo(NavigationParameters parameters)
+        {
+            this.BatFamilyAlls = await this.BatItemService.GetAllAsync();
         }
 
 
